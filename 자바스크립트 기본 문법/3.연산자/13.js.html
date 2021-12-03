@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+  <script>
+    var incData=1;
+    var decData=5;
+    var r1=r2=0;
+    r1=15%6; // 나머지 연산
+    document.write("15%3 = " + r1 + "<br>");
+
+    document.write("incData++ = " + incData++ + "<br>"); // 후위 증가  
+    //  후위 증가 끝나면 보이지않게 값이 1증가
+    document.write("++incData = " + ++incData + "<br>"); // 전위 증가
+    //  보이지 않는 변수값 2가 전위증가 라인을 거치면서 한번더 1이 더해져3의 값이 출력
+
+    document.write("decData-- = " + decData-- + "<br>"); // 후위 감소
+    //  후위 감소 끝나면 보이지않게 값이 1감소
+    document.write("--decData = " + --decData + "<br>"); // 전위 감소
+    //  보이지 않는 변수값 4가 전위감소 라인을 거치면서 한번더 1이 감소해 3의 값이 출력
+
+    r2=incData*decData; //  곱셈 연산
+    document.write("incData*decData = "+ r2 + "<br>");
+
+  </script>
+</body>
+</html>
